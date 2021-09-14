@@ -9,5 +9,5 @@ spring:
     driverClassName: oracle.jdbc.driver.OracleDriver
   jpa:
     database-platform: org.hibernate.dialect.Oracle9Dialect
-    hibernate.ddl-auto: create
+    hibernate.ddl-auto: none
     show-sql: true
