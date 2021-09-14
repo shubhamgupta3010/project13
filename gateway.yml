@@ -1,13 +1,14 @@
 server:
   port: 8086
 
-# spring:
-#   cloud:
-#     gateway:
-#       routes:
-#         uri: http://localhost:8181/
-#         predicates:
-#         - Path=/api/v1/**
-#         uri: http://localhost:8081/
-#         predicates:
-#         - Path=/api/v2/**
+spring:
+  cloud:
+    gateway:
+      routes:
+      - uri: http://localhost:8181/
+        predicates:
+        - Path=/api/v1/**
+      - uri: http://localhost:8081/
+        predicates:
+        - Path=/api/v2/**
+
